@@ -12,7 +12,7 @@ def read_csv() -> list:
     Returns:
         list(list): list of dictionaries read in the csv
     """
-    with open('./etc/pol.csv', mode='r', encoding="UTF-8") as file:
+    with open('etc/pol.csv', mode='r', encoding="UTF-8") as file:
         return list(csv.DictReader(file))
 
 def convert_csv_to_politians(csv_list:list) -> list:
