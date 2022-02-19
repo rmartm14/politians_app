@@ -19,5 +19,11 @@ class Politician():
       self.retribucion_mensual = retribucion_mensual
       self.retribucion_anual = retribucion_anual
       self.observaciones = observaciones
-
     
+    @classmethod
+    def from_request(self, request_data):
+        return Politician(request_data['titular'], request_data['partido'], request_data['partido_filtro'],
+        request_data['genero'], request_data['cargo_filtro'], request_data['cargo'], request_data['institucion'],
+        request_data['ccaa'], request_data['sueldobase_sueldo'], request_data['complementos_sueldo'], request_data['paga_sueldo'],
+        request_data['dieta_sueldo'], request_data['trienios_sueldo'], request_data['retribucion_mensual'], request_data['retribucion_anual'],
+        request_data['observaciones'])
