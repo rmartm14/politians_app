@@ -1,0 +1,100 @@
+<button mat-mini-fab>
+    <mat-icon aria-hidden="false" aria-label="Ver informacion" (click)="goBack()">arrow_back</mat-icon>
+</button>
+<form [formGroup]="formGroup">
+    <mat-card class="margin-with-bt">
+        <mat-grid-list cols="5" rowHeight="10:1">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Nombre</mat-label>
+                    <input matInput placeholder="Nombre" formControlName="name">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Partido</mat-label>
+                    <input matInput placeholder="Partido" formControlName="partido">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Genero</mat-label>
+                    <input matInput placeholder="Genero" formControlName="genero">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Cargo</mat-label>
+                    <input matInput placeholder="Cargo" formControlName="cargo">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Institucion</mat-label>
+                    <input matInput placeholder="Institucion" formControlName="institucion">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="5" rowHeight="10:1"  class="list">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>CCAA</mat-label>
+                    <input matInput placeholder="CCAA" formControlName="ccaa">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Sueldo Base</mat-label>
+                    <input matInput placeholder="Sueldo Base" formControlName="sueldo">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Complementos</mat-label>
+                    <input matInput placeholder="Complementos" formControlName="complementos">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Paga</mat-label>
+                    <input matInput placeholder="Paga" formControlName="paga">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Dieta</mat-label>
+                    <input matInput placeholder="Dieta" formControlName="dieta">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="5" rowHeight="10:1"  class="list">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Trienios</mat-label>
+                    <input matInput placeholder="Trienios" formControlName="trienios">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Retribución Mensual</mat-label>
+                    <input matInput placeholder="Retribucion mensual" formControlName="ret_men">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Retribución Anual</mat-label>
+                    <input matInput placeholder="Retribucion anual" formControlName="ret_an">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label>Observaciones</mat-label>
+                    <input matInput placeholder="Observaciones" formControlName="ob">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-raised-button color="primary" (click)="submit()"> Send</button> 
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</form>

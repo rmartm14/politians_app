@@ -1,10 +1,12 @@
 
 from flask import Flask, request
+from flask_cors import CORS
 from mongo_service import find_politician, initializeDB, edit_politician, get_politician_list
 from politician import Politician
 
 
 app = Flask(__name__)
+CORS(app)
 mycol = initializeDB()
 
 @app.route("/politician/", methods=['POST'])

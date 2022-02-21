@@ -1,0 +1,23 @@
+<button mat-mini-fab><mat-icon aria-hidden="false" aria-label="Ver informacion" (click)="goBack()">arrow_back</mat-icon> </button>
+<mat-card class="margin-with-bt">
+<mat-grid-list cols="5" rowHeight="10:1" >
+    <mat-grid-tile><b>Nombre:</b>{{politician.titular}}</mat-grid-tile>
+    <mat-grid-tile><b>Partido:</b> {{politician.partido}}</mat-grid-tile>
+    <mat-grid-tile><b>Genero:</b> {{politician.genero}}</mat-grid-tile>
+    <mat-grid-tile><b>Cargo:</b> {{politician.cargo}}</mat-grid-tile>
+    <mat-grid-tile><b>Institución:</b> {{politician.institucion}}</mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="5" rowHeight="10:1" class="margin-top">
+    <mat-grid-tile><b>CCAA:</b>{{politician.ccaa}}</mat-grid-tile>
+    <mat-grid-tile><b>Sueldo Base:</b> {{politician.sueldobase_sueldo ? politician.sueldobase_sueldo : 0 }} €</mat-grid-tile>
+    <mat-grid-tile><b>Complementos Sueldo:</b> {{politician.complementos_sueldo ? politician.complementos_sueldo : 0}} €</mat-grid-tile>
+    <mat-grid-tile><b>Paga:</b> {{politician.paga_sueldo ? politician.paga_sueldo : 0}} €</mat-grid-tile>
+    <mat-grid-tile><b>Dieta:</b> {{politician.dieta_sueldo ? politician.dieta_sueldo : 0}} €</mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="5" rowHeight="10:1" class="margin-top">
+    <mat-grid-tile><b>Trienios:</b>{{politician.trienios_sueldo ? politician.trienios_sueldo : "NA"}}</mat-grid-tile>
+    <mat-grid-tile><b>Retribución mensual:</b> {{politician.retribucion_mensual}}</mat-grid-tile>
+    <mat-grid-tile><b>Retribución anual:</b> {{politician.retribucion_anual}}</mat-grid-tile>
+    <mat-grid-tile colspan="2"><b>Observaciones:</b> {{politician.observaciones}}</mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
