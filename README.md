@@ -12,3 +12,5 @@ cd front
 docker build -t front .
 docker run -d -it -p 4200:80 front
 ```
+
+Posteriormente, con entrar como localhost:4200, ya podríamos ver la app web
